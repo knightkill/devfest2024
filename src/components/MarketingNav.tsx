@@ -50,16 +50,6 @@ export const MarketingNav = () => {
           </a>
         </li>
         <li>
-          <Link href="/sign-in/" className="border-none text-gray-700 hover:text-gray-900">
-            {t('sign_in_link')}
-          </Link>
-        </li>
-        <li>
-          <Link href="/sign-up/" className="border-none text-gray-700 hover:text-gray-900">
-            {t('sign_up_link')}
-          </Link>
-        </li>
-        <li>
           <LocaleSwitcher />
         </li>
       </ul>
