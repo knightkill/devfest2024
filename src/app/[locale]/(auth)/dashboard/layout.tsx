@@ -1,49 +1,15 @@
-import { LocaleSwitcher } from '@/components/LocaleSwitcher';
+import { DashboardNav } from '@/components/DashboardNav';
 import { BaseTemplate } from '@/templates/BaseTemplate';
-import { SignOutButton } from '@clerk/nextjs';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 
-export default function DashboardLayout(props: { children: React.ReactNode }) {
-  const t = useTranslations('DashboardLayout');
+export default async function DashboardLayout(props: { children: React.ReactNode; params: { locale: string } }) {
+  const { locale } = await props.params;
+  setRequestLocale(locale);
 
   return (
     <BaseTemplate
-      leftNav={(
-        <>
-          <li>
-            <Link
-              href="/dashboard/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              {t('dashboard_link')}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/dashboard/user-profile/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              {t('user_profile_link')}
-            </Link>
-          </li>
-        </>
-      )}
-      rightNav={(
-        <>
-          <li>
-            <SignOutButton>
-              <button className="border-none text-gray-700 hover:text-gray-900" type="button">
-                {t('sign_out')}
-              </button>
-            </SignOutButton>
-          </li>
-
-          <li>
-            <LocaleSwitcher />
-          </li>
-        </>
-      )}
+      leftNav={<DashboardNav />}
+      rightNav={null} // If you have separate right nav, create and use it here
     >
       {props.children}
     </BaseTemplate>
