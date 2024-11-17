@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/knightkill/devfest2024/compare/v1.0.0...v1.1.0) (2024-11-17)
+
+
+### Features
+
+* remove unused components and authentication pages ([d520238](https://github.com/knightkill/devfest2024/commit/d5202384432157b574384c5874d2f31ddff17190))
+
 # 1.0.0 (2024-11-17)
 
 
