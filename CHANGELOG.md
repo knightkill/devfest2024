@@ -1,3 +1,10 @@
+# 1.0.0 (2024-11-17)
+
+
+### Features
+
+* add DemoBadge and MarketingNav components, update layouts, and enhance styling ([df95a89](https://github.com/knightkill/devfest2024/commit/df95a89b9feea08e8af5ae8e709026ba471bef9b))
+
 # [3.59.0](https://github.com/ixartz/Next-js-Boilerplate/compare/v3.58.2...v3.59.0) (2024-11-15)
 
 
