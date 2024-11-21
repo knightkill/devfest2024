@@ -14,11 +14,11 @@ export const BaseTemplate = (props: {
     <div className="w-full bg-bg-marketing bg-repeat-y px-1 text-gray-700 antialiased">
       <div className="absolute inset-0 bg-white opacity-50"></div>
       <div className="relative z-10">
-        <div className="mx-auto max-w-screen-md">
+        <div className="mx-auto max-w-screen-xl">
           <header className="flex items-center justify-between border-b border-gray-300">
             <div className="flex items-center pb-8 pt-16">
-              <Image className="mr-4 h-10" src="/path-to-logo.png" width={100} height={100} alt="Logo" />
-              <h1 className="text-3xl font-bold text-gray-900">
+              <Image className="mr-4 h-10" src="/assets/images/devfest-logo.png" width={100} height={100} alt="DevFest Logo" />
+              <h1 className="text-sm font-bold text-gray-900">
                 {AppConfig.name}
               </h1>
             </div>
@@ -32,14 +32,14 @@ export const BaseTemplate = (props: {
           </main>
 
           <footer className="border-t border-gray-300 py-8 text-center text-sm">
-            {`© Copyright ${new Date().getFullYear()} ${AppConfig.name}. `}
+            {new Date().getFullYear()} {AppConfig.name}.{' '}
             {t.rich('made_with', {
               author: () => (
                 <a
-                  href="https://creativedesignsguru.com"
+                  href="https://gdgbaroda.com"
                   className="text-blue-700 hover:border-b-2 hover:border-blue-700"
                 >
-                  CreativeDesignsGuru
+                  GDG Baroda
                 </a>
               ),
             })}

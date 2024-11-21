@@ -1,7 +1,7 @@
 {
-  "name": "next-js-boilerplate",
+  "name": "devfest-2024",
   "version": "1.0.0",
-  "author": "Ixartz (https://github.com/ixartz)",
+  "author": "GDG Baroda (https://gdgbaroda.com)",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
     "dev:next": "next dev",
@@ -15,7 +15,6 @@
     "check-types": "tsc --noEmit --pretty",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "commit": "cz",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "dotenv -c production -- drizzle-kit migrate",
     "db:studio": "dotenv -c production -- drizzle-kit studio",
@@ -23,8 +22,7 @@
     "storybook:build": "storybook build",
     "storybook:serve": "http-server storybook-static --port 6006 --silent",
     "serve-storybook": "run-s storybook:*",
-    "test-storybook:ci": "start-server-and-test serve-storybook http://127.0.0.1:6006 test-storybook",
-    "prepare": "husky"
+    "test-storybook:ci": "start-server-and-test serve-storybook http://127.0.0.1:6006 test-storybook"
   },
   "dependencies": {
     "@clerk/localizations": "^3.6.4",
@@ -48,9 +46,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.9.1",
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
-    "@commitlint/cz-commitlint": "^19.5.0",
     "@eslint-react/eslint-plugin": "^1.16.1",
     "@faker-js/faker": "^9.2.0",
     "@next/bundle-analyzer": "^15.0.3",
@@ -80,7 +75,6 @@
     "@vitest/expect": "^2.1.4",
     "autoprefixer": "^10.4.20",
     "checkly": "^4.9.1",
-    "commitizen": "^4.3.1",
     "cross-env": "^7.0.3",
     "cssnano": "^7.0.6",
     "dotenv-cli": "^7.4.2",
@@ -95,7 +89,6 @@
     "eslint-plugin-tailwindcss": "^3.17.5",
     "eslint-plugin-testing-library": "^6.4.0",
     "http-server": "^14.1.1",
-    "husky": "^9.1.6",
     "jsdom": "^25.0.1",
     "lint-staged": "^15.2.10",
     "npm-run-all": "^4.1.5",
@@ -111,21 +104,12 @@
     "vitest-fail-on-console": "^0.7.1"
   },
   "config": {
-    "commitizen": {
-      "path": "@commitlint/cz-commitlint"
-    }
   },
   "release": {
     "branches": [
       "main"
     ],
     "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "preset": "conventionalcommits"
-        }
-      ],
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
       [

@@ -1,18 +1,21 @@
 {
   "RootLayout": {
     "home_link": "Accueil",
-    "about_link": "A propos",
+    "about_link": "À propos",
     "counter_link": "Compteur",
-    "portfolio_link": "Portfolio"
+    "portfolio_link": "Portfolio",
+    "devfest_link": "DevFest 2024"
   },
   "BaseTemplate": {
     "description": "Code de démarrage pour Next.js avec Tailwind CSS",
     "made_with": "Fait avec <author></author>."
   },
   "Index": {
-    "meta_title": "Présentation de Next.js Boilerplate",
-    "meta_description": "Next js Boilerplate est le code de démarrage parfait pour votre projet. Construisez votre application React avec le framework Next.js.",
-    "sponsors_title": "Partenaires"
+    "meta_title": "Google GDG Baroda DevFest 2024",
+    "meta_description": "Rejoignez-nous au Google GDG Baroda DevFest 2024 pour une journée de conférences enrichissantes, d'ateliers et de réseautage avec d'autres développeurs.",
+    "sponsors_title": "Partenaires",
+    "welcome_message": "Bienvenue au GDG Baroda DevFest 2024!",
+    "event_details": "Date : 15 Décembre 2024\nLieu : Siège de GDG Baroda\nRejoignez-nous pour une journée complète d'apprentissage et de réseautage avec des experts dans le domaine."
   },
   "Counter": {
     "meta_title": "Compteur",
@@ -29,8 +32,8 @@
     "count": "Nombre : {count}"
   },
   "About": {
-    "meta_title": "A propos",
-    "meta_description": "A propos description",
+    "meta_title": "À propos",
+    "meta_description": "Description de la page À propos",
     "about_paragraph": "Bienvenue sur notre page À propos ! Nous sommes une équipe de passionnés et dévoués à la création de logiciels.",
     "translation_powered_by": "Traduction propulsée par"
   },
